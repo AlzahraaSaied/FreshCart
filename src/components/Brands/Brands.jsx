@@ -13,7 +13,7 @@ export default function Brands() {
       .get(`https://ecommerce.routemisr.com/api/v1/brands`)
       .then(({ data }) => {
         setBrands(data.data);
-        setLoading(false)
+        setLoading(false);
       })
       .catch((errors) => {});
   }

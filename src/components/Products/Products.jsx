@@ -62,7 +62,7 @@ export default function Products() {
    <h2 className="text-center font-serif font-semibold text-2xl text-green-600 mt-10">Products</h2>
       <div className="row">
         {products.map((product) => (
-          <div className="xl:w-1/6 lg:w-3/12 md:w-4/12 px-4 py-7 sm:w-full ">
+          <div className="xl:w-1/6 lg:w-3/12 md:w-4/12 px-4 py-7 sm:w-full " key={product.id}>
             <div className="product transform transition duration-700 hover:scale-110 hover:border rounded-md  border-green-500 relative ">
             <i class="fa-regular fa-heart absolute text-3xl text-green-500 top-2 right-2 z-50" onClick={()=>addProductToWishlist(product.id)}></i>
 
